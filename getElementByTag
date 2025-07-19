@@ -1,0 +1,2 @@
+let element0 = document.getElementsByTagName(h1);
+console.log(element0)
