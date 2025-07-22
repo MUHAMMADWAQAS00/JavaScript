@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; /* Replace with 'Gilroy' if locally installed or imported */
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: cornflowerblue;
+}
+
+#card {
+  height: 360px;
+  width: 260px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  text-align: center;
+  padding: 10px;
+}
+
+img {
+  height: 120px;
+  width: 120px;
+  border-radius: 15px; /* Rounded square: not too sharp, not too round */
+  object-fit: cover;
+  margin: 20px auto 10px;
+  display: block;
+}
+
+
+#card h1 {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+#card h6 {
+  font-size: 18px;
+  color: rgb(123, 121, 121);
+  transition: color 0.3s;
+  margin-bottom: 20px;
+}
+
+#card button {
+  background-color: cadetblue;
+  color: #fff;
+  font-weight: 700;
+  padding: 10px 18px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
