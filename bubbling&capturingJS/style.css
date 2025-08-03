@@ -1,0 +1,13 @@
+body{
+    background-color: aqua;
+}
+#mainDiv{
+    margin: 20px;padding: 20px;
+    background-color: blue;
+
+}
+#btn{
+    border-bottom: 50%;
+    color: white;
+    background-color: black;
+}
