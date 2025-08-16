@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    background: #1E1E2F; /* Dark background */
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.todo-App {
+    width: 50%;
+    background: #2C2C3E; /* Card color */
+    margin: auto;
+    padding: 40px 30px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.todo-App h2 {
+    color: #00ADB5; /* Neon teal */
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.todo-App img {
+    width: 28px;
+    margin-left: 10px;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #393E46; /* Darker row */
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    transition: 0.3s ease;
+}
+
+.row:hover {
+    background: #434955;
+}
+
+input {
+    width: 80%;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 12px;
+    color: #EEEEEE;
+    font-size: 16px;
+}
+
+input::placeholder {
+    color: #AAAAAA;
+}
+
+button {
+    border: none;
+    outline: none;
+    padding: 14px 40px;
+    background: #00ADB5;
+    color: #FFFFFF;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 40px;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #08d9d6;
+    box-shadow: 0 0 10px #08d9d6;
+}
+
+ul li {
+    list-style: none;
+    font-size: 17px;
+    padding: 12px 8px 12px 50px;
+    user-select: none;
+    position: relative;
+    color: #EEEEEE;
+    border-bottom: 1px solid #3A3F4B;
+}
+
+ul li::before {
+    content: '';
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    background-image: url('/images/unchecked.png');
+    background-size: cover;
+    background-position: center;
+    top: 12px;
+    left: 10px;
+    filter: brightness(0.9);
+}
+
+ul li.checked {
+    color: #777;
+    text-decoration: line-through;
+}
+
+ul li.checked::before {
+    background-image: url('/images/checked.png');
+}
+
+ul li span {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+    color: #FF5722; /* Red for delete */
+    line-height: 35px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s ease;
+}
+
+ul li span:hover {
+    background: rgba(255, 87, 34, 0.2);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 630px) {
+    .todo-App {
+        width: 85%;
+    }
+    button {
+        padding: 12px 20px;
+    }
+}
